@@ -1,0 +1,352 @@
+*{
+    margin:0px;
+    box-sizing : border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: white;
+    color:#333
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding:15px 8%;
+    position: fixed;
+    width:100%;
+    align-items:center;
+    box-shadow: 0 4px 8px gray;
+    top: 0%;
+    background-color: white;
+    z-index: 1;
+}
+.link{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.link:hover{
+    color: brown;
+}
+.navlinks{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 10px;
+}
+.brandname{
+    font-size:24px;
+    font-weight:bold;
+    border:none;
+}
+
+.banner{
+    margin:0px;
+    padding: 0 40px;
+    color: black;
+    margin-top: 40px;
+    padding: 80px;
+    background:url(https://media.istockphoto.com/id/1195657644/photo/mountain-range.jpg?s=612x612&w=0&k=20&c=lFpvUbJ2T61Ldm4E0JtblEhvCBj7bkiLUKSodf1O-YA=);
+    background-attachment: fixed;
+    background-position: center;
+    color: #ab8e66;
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    height:250px;
+}
+.bannerBody{
+    border: 4px solid white;
+    padding: 40px 70px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+h1{
+    font-size: 70px;
+    letter-spacing: 3px;
+}
+button{
+    background-color:#0077b6;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+button:hover{
+    background-color:#005f8f;
+}
+.destinations{
+    padding:80px 8%;
+}
+
+.destinations h2{
+    text-align:center;
+    font-size:48px;
+    margin-bottom:60px;
+    color:#222;
+}
+
+.destination-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#fff;
+    width:350px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.card h3{
+    margin-top:25px;
+    font-size:24px;
+    color:#222;
+}
+
+.card p{
+    margin-top:20px;
+    font-size:18px;
+    line-height:1.7;
+    color:#444;
+}
+.packages{
+    background:#f4f4f4;
+    padding:80px 8%;
+}
+
+.packages h2{
+    text-align:center;
+    font-size:48px;
+    color:#222;
+    margin-bottom:60px;
+}
+
+.package-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.package-card{
+    background:#fff;
+    width:350px;
+    padding:40px 30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.package-card:hover{
+    transform:translateY(-8px);
+}
+
+.package-card h3{
+    font-size:24px;
+    color:#222;
+    margin-bottom:30px;
+}
+
+.package-card p{
+    font-size:18px;
+    color:#333;
+    margin-bottom:30px;
+}
+
+.package-card span{
+    font-size:22px;
+    font-weight:bold;
+    color:#0077cc;
+}
+/* Reviews Section */
+.reviews{
+    background:#f4f4f4;
+    padding:80px 8%;
+}
+
+.reviews h2{
+    text-align:center;
+    font-size:48px;
+    margin-bottom:50px;
+    color:#222;
+}
+
+.review-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.review-card{
+    background:#fff;
+    width:350px;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.review-card:hover{
+    transform:translateY(-5px);
+}
+
+.review-card p{
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.review-card h4{
+    color:#0077cc;
+    font-size:22px;
+}
+
+/* Contact Section */
+.contact{
+    background:#f4f4f4;
+    padding:80px 8%;
+}
+
+.contact h2{
+    text-align:center;
+    font-size:48px;
+    margin-bottom:40px;
+    color:#222;
+}
+
+.contact-form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:15px;
+    font-size:16px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    outline:none;
+}
+
+.contact-form button{
+    background:#0077cc;
+    color:white;
+    border:none;
+    padding:15px;
+    font-size:18px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.contact-form button:hover{
+    background:#005fa3;
+}
+.footer{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+/* Tablet */
+
+@media(max-width:992px){
+
+    h1{
+        font-size:50px;
+    }
+
+    .destinations h2,
+    .packages h2,
+    .reviews h2,
+    .contact h2{
+        font-size:38px;
+    }
+
+    .bannerBody{
+        padding:30px 40px;
+    }
+
+    .navlinks{
+        gap:15px;
+    }
+}
+@media(max-width:768px){
+
+    .nav{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    .navlinks{
+        margin-top:10px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    h1{
+        font-size:38px;
+    }
+
+    .bannerBody{
+        padding:25px;
+        width:90%;
+    }
+
+    .banner p{
+        font-size:16px;
+    }
+
+    .destinations,
+    .packages,
+    .reviews,
+    .contact{
+        padding:60px 5%;
+    }
+
+    .destinations h2,
+    .packages h2,
+    .reviews h2,
+    .contact h2{
+        font-size:32px;
+    }
+
+    .card,
+    .package-card,
+    .review-card{
+        width:100%;
+        max-width:100%;
+    }
+
+    button{
+        width:100%;
+    }
+}
